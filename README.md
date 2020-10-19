@@ -1,3 +1,5 @@
 # The Shifting Baselines Machine
 
 The idea behind this project was to create a tool to actively shift baselines by interpolating between language styles. This is how the Shifting Baselines Machine came to life. The machine consists of two neural networks one trained with tweets from @BarackObama and one with tweets from @realDonaldTrump. It can be fed with a starting character sequence and predict how a tweet starting with this sequence will end. The clue is that you can also give it an impact ratio that determines how much impact each network has on the resulting tweet. The distribution of this impact is realised by letting each network decide on as much characters as the specified ratio allows them in relation to the maximum length of 280 characters. If you use the Shifting Baselines Machine to create a series of tweets and change the impact ratio continuously you are interpolating between language styles. This is how you might be able to actively produce and observe shifting baselines.
+
+To try the tool please visit the [project website](https://shifting-baselines.org/robert-lasig/).
